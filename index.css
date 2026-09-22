@@ -291,3 +291,38 @@
     gap:8px;
   }
 }
+
+/* V17 — final mobile headline fit (real iPhone) */
+@media (max-width:760px){
+  /* Home / Behind NAAABA: keep ARANTXA. completely inside viewport */
+  .about-slice h2{
+    font-size:clamp(58px,17vw,74px)!important;
+    line-height:.78!important;
+    max-width:100%!important;
+    overflow-wrap:normal!important;
+    word-break:normal!important;
+  }
+
+  /* Studio hero: SMALL STUDIO. / BIG IDEAS. */
+  .page-hero h1{
+    font-size:clamp(38px,10.6vw,47px)!important;
+    line-height:.9!important;
+    max-width:100%!important;
+  }
+
+  /* Contact hero: TELL ME / WHAT YOU'RE / BUILDING. */
+  .contact h1{
+    font-size:clamp(45px,12.4vw,55px)!important;
+    line-height:.88!important;
+    max-width:100%!important;
+    overflow-wrap:normal!important;
+    word-break:normal!important;
+    hyphens:none!important;
+  }
+}
+
+@media (max-width:390px){
+  .about-slice h2{font-size:16.5vw!important}
+  .page-hero h1{font-size:10.2vw!important}
+  .contact h1{font-size:12vw!important}
+}
