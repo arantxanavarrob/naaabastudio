@@ -394,3 +394,39 @@
  .dossier-links a{font-size:27px;padding:19px 0 16px}
  .dossier-links a:hover{padding-left:0}
 }
+
+
+/* V16 — project letters as website sneak peeks */
+.project-letter{
+  display:inline-block;
+  color:transparent!important;
+  -webkit-text-fill-color:transparent;
+  -webkit-background-clip:text;
+  background-clip:text;
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position:center;
+  filter:saturate(.95) contrast(1.04);
+  transition:background-size .9s cubic-bezier(.2,.75,.2,1), filter .45s ease, transform .9s cubic-bezier(.2,.75,.2,1);
+  will-change:background-size,transform;
+}
+.project:hover .project-letter{background-size:112%;filter:saturate(1.08) contrast(1.05);transform:scale(1.015)}
+.project-letter-nour{background-image:url("https://image.thum.io/get/width/1600/crop/1000/noanimate/https://arantxanavarrob.github.io/nour/")}
+.project-letter-wolnut{background-image:url("https://image.thum.io/get/width/1600/crop/1000/noanimate/https://arantxanavarrob.github.io/wolnut/")}
+.project-letter-porcelastone{background-image:url("https://image.thum.io/get/width/1600/crop/1000/noanimate/https://porcelastone.com/")}
+.project-letter-mare{background-image:url("assets/img/projects/mare-preview.svg")}
+.project-letter-noma{background-image:url("https://image.thum.io/get/width/1600/crop/1000/noanimate/https://arantxanavarrob.github.io/noma/")}
+.project-letter-miss3d{background-image:url("https://image.thum.io/get/width/1600/crop/1000/noanimate/https://arantxanavarrob.github.io/miss3d/index.html")}
+/* Keep each project identity around the image-filled glyph. */
+.nour-placeholder,.wolnut-placeholder,.mare-placeholder{isolation:isolate}
+.nour-placeholder .project-letter{filter:saturate(1.08) contrast(1.08)}
+@media(max-width:760px){
+  .project-letter{background-size:cover}
+  .project:hover .project-letter{background-size:cover;transform:none}
+}
+
+/* V17 — seamless full-width marquee */
+.marquee{overflow:hidden;white-space:nowrap}
+.marquee-inner{display:flex;width:max-content;animation:marqueeSeamless 26s linear infinite;will-change:transform}
+.marquee-inner span{display:block;flex:none;padding-right:0}
+@keyframes marqueeSeamless{from{transform:translateX(0)}to{transform:translateX(-50%)}}
