@@ -430,3 +430,22 @@
 .marquee-inner{display:flex;width:max-content;animation:marqueeSeamless 26s linear infinite;will-change:transform}
 .marquee-inner span{display:block;flex:none;padding-right:0}
 @keyframes marqueeSeamless{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+/* V18 — ES | EN language switch */
+.lang-switch{display:flex;align-items:center;gap:6px;margin-left:auto;margin-right:28px;font-size:11px;letter-spacing:.12em;text-transform:uppercase;white-space:nowrap}
+.lang-switch a{opacity:.5;transition:opacity .25s ease}
+.lang-switch a:hover,.lang-switch a.active{opacity:1}
+@media(max-width:760px){.lang-switch{margin-left:auto;margin-right:14px;font-size:10px;position:relative;z-index:52}.nav.open .lang-switch{color:#fff}.nav.open .menu-btn{z-index:53}}
+
+/* V19 — desktop navigation centered independently from logo/language */
+@media(min-width:761px){.nav{position:fixed}.navlinks{position:absolute;left:50%;transform:translateX(-50%)}.lang-switch{margin-left:auto;margin-right:0}}
+
+/* V18 — Studio hero desktop fit */
+@media (min-width:761px){
+  body:has(.studio-intro) .page-hero h1{
+    font-size:clamp(62px,9.25vw,142px)!important;
+    line-height:.86!important;
+    max-width:none!important;
+    white-space:nowrap;
+  }
+}

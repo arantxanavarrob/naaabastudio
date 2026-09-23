@@ -1,54 +1,46 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="es">
-
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Contact — NAAABA Studio</title>
-    <link rel="stylesheet" href="index.css">
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<title>Contact — NAAABA Studio</title>
+<link href="index.css" rel="stylesheet"/>
 </head>
-
 <body>
-    <header class="nav"><a class="brand" href="index.html">NAAABA.</a>
-        <nav class="navlinks"><a href="work.html">Work</a><a href="studio.html">Studio</a><a
-                href="services.html">Services</a><a href="contact.html">Contact</a></nav><button
-            class="menu-btn">MENU</button>
-    </header>
-    <main class="contact">
-        <div>
-            <div class="eyebrow">Contact · NAAABA</div>
-            <h1 class="display scroll-type">TELL ME<br>WHAT YOU'RE<br>BUILDING.</h1>
-            <p>No hace falta tenerlo todo claro. Cuéntame qué quieres hacer y vemos cómo darle forma.</p>
-        </div>
-        <form action="https://formspree.io/f/xrpbqwpw" method="post">
-            <input type="hidden" name="_next" value="thanks.html">
-            <input type="hidden" name="_subject" value="Nuevo proyecto desde NAAABA Studio"><input type="text" name="website" tabindex="-1" autocomplete="off"
-                style="position:absolute;left:-9999px">
-            <div class="form-field"><label>Nombre</label><input required name="name" placeholder="Tu nombre"></div>
-            <div class="form-field"><label>Email</label><input required type="email" name="email"
-                    placeholder="tu@email.com"></div>
-            <div class="form-field"><label>Marca / empresa</label><input name="company" placeholder="¿Cómo se llama?">
-            </div>
-            <div class="form-field"><label>¿Qué necesitas?</label><select name="service">
-                    <option>Branding</option>
-                    <option>Web design + development</option>
-                    <option>UX/UI</option>
-                    <option>Content</option>
-                    <option>Otro</option>
-                </select></div>
-            <div class="form-field"><label>Presupuesto aproximado</label><select name="budget">
-                    <option>No lo sé todavía</option>
-                    <option>Menos de 1.000 €</option>
-                    <option>1.000–2.500 €</option>
-                    <option>2.500–5.000 €</option>
-                    <option>5.000 €+</option>
-                </select></div>
-            <div class="form-field"><label>Cuéntame el proyecto</label><textarea required name="message"
-                    placeholder="Qué tienes en mente, qué necesitas, timings..."></textarea></div><button class="submit"
-                type="submit">Send project ↗</button>
-        </form>
+<header class="nav"><a class="brand" href="index.html">NAAABA.</a>
+<nav class="navlinks"><a href="work.html">Proyectos</a><a href="studio.html">Studio</a><a href="services.html">Servicios</a><a href="contact.html">Contacto</a></nav><div class="lang-switch"><a class="active" href="contact.html">ES</a> | <a class="" href="en/contact.html">EN</a></div><button class="menu-btn">MENU</button>
+</header>
+<main class="contact">
+<div>
+<div class="eyebrow">Contact · NAAABA</div>
+<h1 class="display scroll-type">CUÉNTAME<br/>QUÉ ESTÁS<br/>CREANDO.</h1>
+<p>No hace falta tenerlo todo claro. Cuéntame qué quieres hacer y vemos cómo darle forma.</p>
+</div>
+<form action="https://formspree.io/f/xrpbqwpw" method="post">
+<input name="_next" type="hidden" value="thanks.html"/>
+<input name="_subject" type="hidden" value="Nuevo proyecto desde NAAABA Studio"/><input autocomplete="off" name="website" style="position:absolute;left:-9999px" tabindex="-1" type="text"/>
+<div class="form-field"><label>Nombre</label><input name="name" placeholder="Tu nombre" required=""/></div>
+<div class="form-field"><label>Email</label><input name="email" placeholder="tu@email.com" required="" type="email"/></div>
+<div class="form-field"><label>Marca / empresa</label><input name="company" placeholder="¿Cómo se llama?"/>
+</div>
+<div class="form-field"><label>¿Qué necesitas?</label><select name="service">
+<option>Branding</option>
+<option>Web design + development</option>
+<option>UX/UI</option>
+<option>Content</option>
+<option>Otro</option>
+</select></div>
+<div class="form-field"><label>Presupuesto aproximado</label><select name="budget">
+<option>No lo sé todavía</option>
+<option>Menos de 1.000 €</option>
+<option>1.000–2.500 €</option>
+<option>2.500–5.000 €</option>
+<option>5.000 €+</option>
+</select></div>
+<div class="form-field"><label>Cuéntame el proyecto</label><textarea name="message" placeholder="Qué tienes en mente, qué necesitas, timings..." required=""></textarea></div><button class="submit" type="submit">Enviar proyecto ↗</button>
+</form>
 </main>
-    <script src="index.js"></script>
+<script src="index.js"></script>
 </body>
-
 </html>
