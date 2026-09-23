@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="900" viewBox="0 0 1400 900">
+<rect width="1400" height="900" fill="#f3eee6"/><rect x="0" y="0" width="1400" height="90" fill="#f3eee6"/>
+<text x="70" y="58" font-family="Arial,sans-serif" font-size="28" font-weight="700" fill="#111">MARE</text>
+<text x="1120" y="58" font-family="Arial,sans-serif" font-size="16" fill="#111">MENÚ   RESERVAS</text>
+<rect x="70" y="140" width="760" height="620" fill="#234f74"/><rect x="865" y="140" width="465" height="300" fill="#d8c7b2"/>
+<rect x="865" y="470" width="465" height="290" fill="#111"/><text x="920" y="585" font-family="Georgia,serif" font-size="56" fill="#f3eee6">cocina</text>
+<text x="920" y="650" font-family="Georgia,serif" font-size="56" fill="#f3eee6">de aquí.</text><circle cx="450" cy="450" r="175" fill="#f3eee6" opacity=".94"/>
+<text x="327" y="470" font-family="Georgia,serif" font-size="76" fill="#234f74">MARE</text></svg>
