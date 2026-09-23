@@ -330,3 +330,67 @@
 /* Wolnut project */
 .wolnut-placeholder{background:#8a6548!important;color:#f4f0e9!important}
 .project-wolnut .project-media{background:#8a6548}
+
+
+/* NAAABA dossier selector */
+.dossier-section{
+  margin:clamp(80px,12vw,180px) clamp(20px,4vw,64px) clamp(80px,10vw,140px);
+  padding-top:18px;
+  border-top:1px solid currentColor;
+}
+.dossier-meta{
+  font-size:11px;
+  font-weight:700;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  margin-bottom:clamp(42px,7vw,90px);
+}
+.dossier-head{
+  display:grid;
+  grid-template-columns:minmax(0,1.7fr) minmax(220px,.65fr);
+  gap:40px;
+  align-items:end;
+  margin-bottom:clamp(60px,8vw,110px);
+}
+.dossier-head h2{
+  margin:0;
+  font-size:clamp(62px,8.8vw,145px);
+  line-height:.78;
+  letter-spacing:-.065em;
+}
+.dossier-head p{
+  margin:0 0 4px;
+  max-width:330px;
+  font-size:14px;
+  line-height:1.45;
+}
+.dossier-links{
+  border-top:1px solid currentColor;
+}
+.dossier-links a{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:22px 0 18px;
+  border-bottom:1px solid currentColor;
+  color:inherit;
+  text-decoration:none;
+  font-size:clamp(24px,3.2vw,48px);
+  font-weight:700;
+  letter-spacing:-.035em;
+  transition:color .2s ease,padding .25s ease;
+}
+.dossier-links a:hover{
+  color:#8F1114;
+  padding-left:12px;
+}
+.dossier-links a span:last-child{font-size:.65em;transition:transform .25s ease}
+.dossier-links a:hover span:last-child{transform:translate(4px,-4px)}
+@media(max-width:760px){
+ .dossier-section{margin:72px 18px 80px}
+ .dossier-head{grid-template-columns:1fr;gap:28px;margin-bottom:55px}
+ .dossier-head h2{font-size:clamp(48px,15vw,74px);line-height:.8}
+ .dossier-head p{font-size:13px;max-width:280px}
+ .dossier-links a{font-size:27px;padding:19px 0 16px}
+ .dossier-links a:hover{padding-left:0}
+}
