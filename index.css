@@ -449,3 +449,37 @@
     white-space:nowrap;
   }
 }
+
+
+/* V18 — Spanish Studio hero mobile fit */
+@media (max-width:760px){
+  .page-hero h1.studio-hero-es{
+    font-size:clamp(34px,9.2vw,41px)!important;
+    line-height:.9!important;
+    max-width:100%!important;
+    overflow-wrap:normal!important;
+    word-break:normal!important;
+    hyphens:none!important;
+  }
+}
+@media (max-width:390px){
+  .page-hero h1.studio-hero-es{font-size:9.2vw!important;}
+}
+
+/* V20 — compact inner-page heroes on mobile */
+@media (max-width:760px){
+  .page-hero{
+    height:auto!important;
+    min-height:0!important;
+    padding-top:105px!important;
+    padding-bottom:46px!important;
+    justify-content:flex-end;
+  }
+  .page-hero .eyebrow{margin-bottom:24px}
+}
+@media (max-width:390px){
+  .page-hero{
+    padding-top:96px!important;
+    padding-bottom:42px!important;
+  }
+}
