@@ -112,3 +112,16 @@ document.querySelectorAll('.project-link').forEach(project => {
 if (matchMedia('(max-width:760px), (pointer:coarse)').matches) {
   document.querySelectorAll('.scroll-type .type-char').forEach(ch => ch.classList.add('typed'));
 }
+
+
+// V21 — floating back-to-top arrow on every page.
+const backToTop = document.createElement('button');
+backToTop.className = 'back-to-top';
+backToTop.type = 'button';
+backToTop.setAttribute('aria-label', document.documentElement.lang === 'es' ? 'Volver arriba' : 'Back to top');
+backToTop.innerHTML = '↑';
+document.body.appendChild(backToTop);
+const toggleBackToTop = () => backToTop.classList.toggle('is-visible', window.scrollY > Math.min(500, window.innerHeight * .65));
+addEventListener('scroll', toggleBackToTop, {passive:true});
+backToTop.addEventListener('click', () => window.scrollTo({top:0, behavior:'smooth'}));
+toggleBackToTop();

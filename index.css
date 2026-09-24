@@ -483,3 +483,24 @@
     padding-bottom:42px!important;
   }
 }
+
+
+/* V21 — service dossier mobile fit + contact dossier + back to top */
+@media(max-width:760px){
+  .dossier-head h2.dossier-title-es{font-size:clamp(39px,12.2vw,58px)!important;line-height:.82!important;white-space:nowrap}
+  .dossier-head h2.dossier-title-en{font-size:clamp(34px,10.4vw,50px)!important;line-height:.82!important;white-space:nowrap}
+}
+.contact-dossier{margin-top:48px;padding-top:16px;border-top:1px solid rgba(255,255,255,.28);max-width:520px}
+.contact-dossier .contact-dossier-label{margin:0 0 12px;font-size:10px;letter-spacing:.18em;text-transform:uppercase;opacity:.7}
+.contact-dossier .contact-dossier-copy{margin:0 0 20px;font-size:14px;line-height:1.45;max-width:360px}
+.contact-dossier-links{border-top:1px solid rgba(255,255,255,.28)}
+.contact-dossier-links a{display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid rgba(255,255,255,.28);padding:14px 0 12px;font-size:14px;font-weight:600;letter-spacing:.04em;transition:padding .25s ease,opacity .25s ease}
+.contact-dossier-links a:hover{padding-left:8px;opacity:.72}
+.back-to-top{position:fixed;right:22px;bottom:22px;z-index:45;width:48px;height:48px;border:1px solid currentColor;border-radius:50%;display:grid;place-items:center;background:var(--cream);color:var(--ink);font-size:21px;cursor:pointer;opacity:0;visibility:hidden;transform:translateY(12px);transition:opacity .25s ease,transform .25s ease,visibility .25s ease}
+.back-to-top.is-visible{opacity:1;visibility:visible;transform:none}
+.back-to-top:hover{transform:translateY(-3px)}
+@media(max-width:760px){
+  .contact-dossier{margin-top:38px}
+  .contact-dossier-links a{font-size:13px}
+  .back-to-top{right:16px;bottom:16px;width:44px;height:44px}
+}
